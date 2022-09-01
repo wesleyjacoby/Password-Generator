@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
 
-/* font-family: 'JetBrains Mono', monospace; */
-
 :root {
     --dark-gray: hsl(248, 10%, 15%);
     --light-gray: hsl(251, 9%, 53%);
@@ -30,8 +28,8 @@ body {
     min-height: 100vh;
     font-family: 'JetBrains Mono', monospace;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
     color: var(--almost-white);
     background: linear-gradient(180deg, var(--almost-black) 0%, var(--almost-black) 100%);
 }
@@ -40,14 +38,14 @@ body {
     text-align: center;
     min-width: 345px;
     height: fit-content;
-    margin: 20px;
+    margin: 1.25rem;
 }
 
 .heading {
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 1rem;
+    line-height: 1.3125rem;
     color: var(--light-gray);
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .inner-container {
@@ -59,14 +57,14 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 16px;
+    padding: 1rem;
     background-color: var(--dark-gray);
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .password-text {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     color: var(--almost-white);
     mix-blend-mode: normal;
     opacity: 0.25;
@@ -81,7 +79,7 @@ body {
 }
 
 .copied-text {
-    margin-right: 16px;
+    margin-right: 1rem;
     text-transform: uppercase;
     color: var(--green);
 }
@@ -92,24 +90,24 @@ body {
 }
 
 .form-section {
-    padding: 16px;
+    padding: 1rem;
     background-color: var(--dark-gray);
 }
 
 .character {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 
 .character-text {
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 1rem;
+    line-height: 1.3125rem;
 }
 
 .character-amount {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     color: var(--green);
 }
 
@@ -129,7 +127,7 @@ body {
 #slider {
     width: 100%;
     background-color: var(--dark-gray);
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 input[type='range'] {
@@ -150,16 +148,16 @@ input[type='range']::-webkit-slider-runnable-track {
     background: linear-gradient(to right, var(--green), var(--green)), var(--almost-black);
     background-size: var(--background-size, 0%) 100%;
     background-repeat: no-repeat;
-    height: 8px;
+    height: 0.5rem;
 }
 
 input[type='range']::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 28px;
-    height: 28px;
+    width: 1.75rem;
+    height: 1.75rem;
     background-color: var(--almost-white);
     border-radius: 50%;
-    margin-top: -8px;
+    margin-top: -0.5rem;
 }
 
 input[type='range']::-webkit-slider-thumb:hover {
@@ -174,22 +172,22 @@ input[type='range']::-webkit-slider-thumb:hover {
 
 input[type='range']::-moz-range-track {
     background-color: var(--almost-black);
-    height: 8px;
+    height: 0.5rem;
 }
 
 input[type='range']::-moz-range-progress {
     background-color: var(--green);
-    height: 8px;
+    height: 0.5rem;
 }
 
 input[type='range']::-moz-range-thumb {
     -moz-appearance: none;
-    width: 28px;
-    height: 28px;
+    width: 1.75rem;
+    height: 1.75rem;
     background-color: var(--almost-white);
     border-radius: 50%;
     border: none;
-    margin-top: -8px;
+    margin-top: -0.5rem;
 }
 
 input[type='range']::-moz-range-thumb:hover {
@@ -215,16 +213,16 @@ input[type='range']::-moz-range-thumb:active {
 
 label {
     align-self: center;
-    font-size: 16px;
-    line-height: 21px;
-    margin-left: 20px;
+    font-size: 1rem;
+    line-height: 1.3125rem;
+    margin-left: 1.25rem;
 }
 
 .checkbox-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 input[type="checkbox"] {
@@ -234,8 +232,8 @@ input[type="checkbox"] {
     appearance: none;
     outline: 0;
     background: transparent;
-    height: 20px;
-    width: 20px;
+    height: 1.25rem;
+    width: 1.25rem;
     border: 2px solid var(--almost-white);
     color: var(--almost-white);
 }
@@ -269,14 +267,14 @@ input[type='checkbox']:checked {
 }
 
 .checkbox-container:nth-of-type(4) {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .error {
     display: none;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: var(--red);
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .strength-container {
@@ -284,13 +282,13 @@ input[type='checkbox']:checked {
     justify-content: space-between;
     align-items: center;
     background-color: var(--almost-black);
-    padding: 18px 16px;
-    margin-bottom: 16px;
+    padding: 1.125rem 1rem;
+    margin-bottom: 1rem;
 }
 
 .strength-text {
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 1rem;
+    line-height: 1.3125rem;
     color: var(--light-gray);
     text-transform: uppercase;
 }
@@ -302,26 +300,26 @@ input[type='checkbox']:checked {
 
 .strength-word {
     text-transform: uppercase;
-    margin-right: 8px;
+    margin-right: 0.5rem;
 }
 
 .bar {
-    width: 10px;
-    height: 28px;
+    width: 0.625rem;
+    height: 1.75rem;
     border: 2px solid var(--almost-white);
-    margin-left: 8px;
+    margin-left: 0.5rem;
 }
 
 .generate {
     width: 100%;
     background-color: var(--green);
     color: var(--dark-gray);
-    padding: 18px;
+    padding: 1.125rem;
     text-transform: uppercase;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
-    line-height: 21px;
+    line-height: 1.3125rem;
     border: 2px solid var(--green);
 }
 
@@ -334,8 +332,8 @@ input[type='checkbox']:checked {
 }
 
 span {
-    margin-left: 10px;
-    font-size: 24px;
+    margin-left: 0.625rem;
+    font-size: 1.5rem;
     width: 100%;
     font-family: 'JetBrains Mono', monospace;
     font-weight: 700;
@@ -347,22 +345,22 @@ span {
     }
 
     .heading {
-        font-size: 24px;
-        line-height: 32px;
-        margin-bottom: 31px;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 1.9375rem;
     }
 
     .password-copy {
-        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
     }
 
     .form-section {
-        padding: 24px 32px 32px 32px;
+        padding: 1.5rem 2rem 2rem 2rem;
     }
 
     .password-text {
-        font-size: 32px;
-        line-height: 42px;
+        font-size: 2rem;
+        line-height: 2.625rem;
     }
 
     .copy {
@@ -370,39 +368,39 @@ span {
     }
 
     .character-text {
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 1.125rem;
+        line-height: 1.5rem;
     }
 
     .character-amount {
-        font-size: 32px;
-        line-height: 42px;
+        font-size: 2rem;
+        line-height: 2.625rem;
     }
 
     label {
-        font-size: 18px;
-        line-height: 24px;
-        margin-left: 24px;
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        margin-left: 1.5rem;
     }
 
     .checkbox-container {
-        margin-bottom: 19px;
+        margin-bottom: 1.1875rem;
     }
 
     .error {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .strength-container {
-        padding: 25px 32px;
-        margin-bottom: 32px;
+        padding: 1.5625rem 2rem;
+        margin-bottom: 2rem;
     }
 
     .generate {
-        padding: 21px;
-        font-size: 18px;
+        padding: 1.3125rem;
+        font-size: 1.125rem;
         font-weight: 700;
-        line-height: 24px;
+        line-height: 1.5rem;
         border: 2px solid var(--green);
     }
 }

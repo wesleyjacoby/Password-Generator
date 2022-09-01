@@ -96,11 +96,11 @@ form.addEventListener('submit', (e) => {
 
     if (uppercaseCheckbox.checked !== true && lowercaseCheckbox.checked !== true && numbersCheckbox.checked !== true && symbolsCheckbox.checked !== true) {
         error.style.display = 'block';
-        checkboxContainer.style.marginBottom = '16px';
+        checkboxContainer.style.marginBottom = '1rem';
         return error.innerText = 'Please select a checkbox above';
     } else {
         error.style.display = 'none';
-        checkboxContainer.style.marginBottom = '32px';
+        checkboxContainer.style.marginBottom = '2rem';
     }
 
     password = chooseRandom(getMasterArray(), slider.value);
@@ -175,7 +175,7 @@ function checkPasswordStrength(passwordStrength) {
             break;
         default:
             error.style.display = 'block';
-            checkboxContainer.style.marginBottom = '16px';
+            checkboxContainer.style.marginBottom = '1rem';
             error.innerText = 'Something horrific has happened';
     }
 }
