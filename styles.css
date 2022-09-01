@@ -122,6 +122,10 @@ body {
     align-items: center;
 }
 
+.hidden-label {
+    display: none;
+}
+
 #slider {
     width: 100%;
     background-color: var(--dark-gray);
